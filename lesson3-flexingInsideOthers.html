@@ -1,0 +1,76 @@
+<html>
+    <header>
+        <style>
+
+            /*talking points for Flexbox
+            
+            
+                1. CSS Property : display Flex
+                2. Flex-direction
+                3. flexing inside of other flexes
+                4. order
+                5. size of the items - Explicit or calculated by the browser remember Containers vs. Objects within
+                6. align-items, justify-content, stretching
+                7 align-self, justify-self 
+                8. Wrapping item rows
+                9. putting together whole interfaces 
+                  -- mock an interface
+             */
+
+            /******************* Main CSS **********************/
+             #container{
+                width:100%;
+                height:100%;
+                display:flex;
+                
+            }
+
+            .mockItem{
+                width:30%;
+                height:30%;
+                background-color: darkgray;
+                margin:2px;
+            
+            } 
+            
+            
+            .mockInnerItem{
+                width:30%;
+                height:30%;
+                background-color: black;
+                margin:2px;
+                display:flex;
+            }
+
+
+            .mockInnerInnerItem{
+                width:30%;
+                height:30%;
+                background-color: orange;
+                margin:2px;
+                }    
+
+
+            #box1{
+                
+            }
+
+            #box2{
+                
+            }
+            
+        </style>        
+    </header>
+    <body>
+        <div id='container'>
+                      
+            <div class="mockItem"> 
+                <div class="mockInnerItem"> -->
+                     <div class="mockInnerInnerItem"></div> 
+                     <div class="mockInnerInnerItem"></div> 
+               </div>
+            </div>
+        </div>
+       
+    </body>
+</html>
